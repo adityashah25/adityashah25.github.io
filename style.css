@@ -1,0 +1,728 @@
+* {
+    background-color: #212121;
+    height: auto;
+    scroll-behavior: smooth;
+}
+
+
+#navheader, #overlay, #overlayparagraph, #overlayheader, #navsubheader, .listnavbar, .email-link, .navbar, .about-me-header, .about-paragraph, .about-image, .resume-header, .resume-info-header, ul, span, .resume-info-paragraph, .skill-header1, .skill-header2, .skill-header3, .skill-header4, .skill-header5, .skill-box-one, .skill-box-two, .skill-box-three, .skill-box-four, .skill-box-five, .contact-header, .contact-paragraph, .contact-email, .material-icons, .web-developed {
+    background-color: transparent;
+}
+
+/* This is for a customer scrollbar */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #262626;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #292929;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(48, 48, 48);
+}
+
+/* This is for navbar */
+
+.nav-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    right: 0.2px;
+    top: 0.001px;
+    width: 100%;
+    height: 67px;
+    background-color: #262626;
+    box-shadow: 2px 10px 10px #1f1f1f;
+    z-index: 3;
+}
+
+.navbar {
+    font-family: 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-variant: small-caps;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    margin: 0px 60px 0px 0px;
+    left: 10%;
+    position: relative;
+    transition: 1s;
+}
+
+.navbar:hover {
+    background-color: white;
+    color: black;
+    padding: 21px;
+    padding-top: 25px;
+    padding-bottom: 23.5px;
+}
+
+#navheader { /* Aditya Shah */
+    background: -webkit-linear-gradient(right, #4568dc, #4ca1af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    margin: 0px 35% 0px 0px;
+    font-family: 'Kanit', 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-weight: 900;
+}
+
+.listnavbar {
+    display: inline;
+}
+
+@media screen and (max-width: 1200px){
+    .navbar {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #navheader {
+        font-size: 2em;
+        left: 20%;
+        top: 15%;
+    }
+}
+
+/* This is for the Home section */
+
+.home-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    margin: auto;
+    top: 7rem;
+    width: 78%;
+    height: 26vw;
+    background-color: #262626;
+    border-radius: 5.5px;
+}
+
+.home-header1, .home-header2, .home-header3, .home-header4, .home-header5, .home-header6, .home-header7, .home-header8 {
+    background: -webkit-linear-gradient(right, #4568dc, #4ca1af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    font-family: 'Kanit', 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5.6vw;
+    font-weight: bolder;
+    display: inline-flexbox;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+/*Used to position and give the headers their animation names */
+.home-header1 {
+    animation-name: anim-1;
+    top: 200%;
+}
+
+.home-header2 {
+    animation-name: anim-2;
+    top: 100%;
+}
+
+.home-header3 {
+    animation-name: anim-3;
+    top: 100%;
+}
+
+.home-header4 {
+    animation-name: anim-4;
+}
+
+.home-header5 {
+    animation-name: anim-5;
+}
+
+.home-header6 {
+    animation-name: anim-6;
+    top: -100%;
+}
+
+.home-header7 {
+    animation-name: anim-7;
+    top: -100%;
+}
+
+.home-header8 {
+    animation-name: anim-8;
+    bottom: 200%;
+}
+
+/* The animations */
+@keyframes anim-1 {
+    0%, 3.03% {
+        left: -100%;
+        opacity: 0;
+    }
+    6.06%, 12.12% {
+        left: 0%;
+        opacity: 1;
+    }
+    15.15%, 100% {
+        left: 120%;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-2 {
+    0%, 15.15% {
+        left: -100%;
+        opacity: 0;
+    }
+    18.18%, 24.24% {
+        left: 40%;
+        opacity: 1;
+    }
+    27.27%, 100% {
+        left: 200%;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-3 {
+    0%, 27.27% {
+        left: -200%;
+        opacity: 0;
+    }
+    30.3%, 36.36% {
+        left: -63%;
+        opacity: 1;
+    }
+    39.39%, 100% {
+        left: 210%;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-4 {
+    0%, 39.39% {
+        left: -200%;
+        opacity: 0;
+    }
+    42.42%, 48.48% {
+        left: 40%;
+        opacity: 1;
+    }
+    51.51%, 100% {
+        left: 175%;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-5 {
+    0%, 51.51% {
+        left: -200%;
+        opacity: 0;
+    }
+    54.54%, 60.6% {
+        left: -60%;
+        opacity: 1;
+    }
+    63.63%, 100% {
+        left: 110%;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-6 {
+    0%, 63.63% {
+        left: -200%;
+        opacity: 0;
+    }
+    66.66%, 72.72% {
+        left: 43%;
+        opacity: 1;
+    }
+    75.75%, 100% {
+        left: 225%;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-7 {
+    0%, 75.75% {
+        left: -200%;
+        opacity: 0;
+    }
+    78.78%, 84.84% {
+        left: -57%;
+        opacity: 1;
+    }
+    87.87%, 100% {
+        left: 110%;
+        opacity: 0;
+    }
+}
+
+@keyframes anim-8 {
+    0%, 87.87% {
+        left: -200%;
+        opacity: 0;
+    }
+    90.9%, 96.96% {
+        left: 0%;
+        opacity: 1;
+    }
+    99.99%, 100% {
+        left: 110%;
+        opacity: 0;
+    }
+}
+
+/* This is for the About section */
+
+.about-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    top: 10.3rem;
+    width: 78%;
+    height: 26vw;
+    background-color: #262626;
+    border-radius: 5.5px;
+}
+
+.about-image {
+    position: absolute;
+    top: 4%;
+    left: 69%;
+    width: 25%;
+    height: 90%;
+    background-size: 19vw;
+    background-position-x: center;
+    background-image: url("Me.png");
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    z-index: 2;
+}
+
+.about-image:hover {
+    opacity: 0.1;
+}
+
+.about-me-header {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    font-family: 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.about-header {
+    position: absolute;
+    top: 10%;
+    left: 6.7%;
+    font-family: 'Kanit', 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: -webkit-linear-gradient(right, #4568dc, #4ca1af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5vw;
+    font-weight: bolder;
+    line-height: 110%;
+}
+
+.about-paragraph {
+    position: absolute;
+    top: 75%;
+    left: 6.7%;
+    font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    width: 400px;
+    font-weight: 100;
+    font-size: 1vw;
+    z-index: 1;
+}
+
+/* What happens when the viewer clicks the image */
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 0px 75px 0px 75px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 4;
+    cursor: pointer;
+}
+
+#overlayheader {
+    position: relative;
+    text-align: center;
+    right: 75px;
+    font-family: 'Kanit', 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #4568dc;
+    font-size: 4em;
+    font-weight: bolder;
+    line-height: 110%;
+}
+
+#overlayparagraph {
+    position: relative;
+    font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: justify;
+    font-weight: 100;
+    font-size: 16px;
+    width: 90%;
+}
+
+#overlayparagraph::first-letter {
+    font-size: 200%;
+}
+
+/* This is for the Resume section */
+
+.resume-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    margin: auto;
+    top: 13.5rem;
+    width: 78%;
+    height: 27vw;
+    background-color: #262626;
+    border-radius: 5.5px;
+}
+
+.resume-header {
+    position: absolute;
+    top: 10%;
+    left: 6.7%;
+    font-family: 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.resume-info-flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    background-color: #262626;
+    border-radius: 5.5px;
+    margin: 25px;
+    width: 90%;
+    height: 75%;
+}
+
+.resume-info-header {
+    position: absolute;
+    bottom: 80.5%;
+    left: 56%;
+    font-family: 'Gayathri', 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7vw;
+    font-weight: lighter;
+    background: -webkit-linear-gradient(right, #4568dc, #4ca1af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+}
+
+.resume-info-paragraph {
+    position: absolute;
+    top: 5%;
+    right: 52%;
+    color: white;
+    font-family: 'Kanit', 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4.7vw;
+    font-weight: bolder;
+    line-height: 110%;
+}
+
+.resume-skill-flex-container {
+    width: 43%;
+    height: 85%;
+    position: absolute;
+    top: 8%;
+    left: 56%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #262626;
+}
+
+@media screen and (max-width: 910px){
+    .resume-skill-flex-container::-webkit-scrollbar {
+        width: 10px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .resume-info-paragraph {
+        top: -7px;
+    }
+
+    .resume-skill-flex-container::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .resume-header {
+        left: 7.1%;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .resume-skill-flex-container::-webkit-scrollbar {
+        width: 2px;
+    }
+    
+}
+
+.skill-header1, .skill-header2, .skill-header3, .skill-header4, .skill-header5 {
+    position: absolute;
+    color: white;
+    font-family: 'Kanit', 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.28vw;
+    font-weight: 100;
+}
+
+.skills-container1 {
+    width: 95%;
+    height: 2.3%;
+    background-color: #2e2e2e;
+    position: absolute;
+    left: 1%;
+    top: 33%;
+}
+
+.skill-header1 {
+    top: 3%;
+}
+
+.skill-box-one {
+    position: absolute;
+    left: 1%;
+    top: 33%;
+    height: 2.3%;
+    width: 0px;
+    background: -webkit-linear-gradient(right, #4568dc, #4ca1af);
+}
+
+.skills-container2 {
+    width: 95%;
+    height: 2.3%;
+    background-color: #2e2e2e;
+    position: absolute;
+    left: 1%;
+    top: 67%;
+}
+
+.skill-header2 {
+    top: 38%;
+}
+
+.skill-box-two {
+    position: absolute;
+    left: 1%;
+    top: 67%;
+    height: 2.3%;
+    width: 0px;
+    background: -webkit-linear-gradient(right, #4568dc, #4ca1af);
+}
+
+.skills-container3 {
+    width: 95%;
+    height: 2.3%;
+    background-color: #2e2e2e;
+    position: absolute;
+    left: 1%;
+    top: 101%;
+}
+
+.skill-header3 {
+    top: 72%;
+}
+
+.skill-box-three {
+    position: absolute;
+    left: 1%;
+    top: 101%;
+    height: 2.3%;
+    width: 0%;
+    background: -webkit-linear-gradient(right, #4568dc, #4ca1af);
+}
+
+.skills-container4 {
+    width: 95%;
+    height: 2.3%;
+    background-color: #2e2e2e;
+    position: absolute;
+    left: 1%;
+    top: 135%;
+}
+
+.skill-header4 {
+    top: 107%;
+}
+
+.skill-box-four {
+    position: absolute;
+    left: 1%;
+    top: 135%;
+    height: 2.3%;
+    width: 0%;
+    background: -webkit-linear-gradient(right, #4568dc, #4ca1af);
+}
+
+.skills-container5 {
+    width: 95%;
+    height: 2.3%;
+    background-color: #2e2e2e;
+    position: absolute;
+    left: 1%;
+    top: 170%;
+    margin-bottom: 10%;
+}
+
+.skill-header5 {
+    top: 140%;
+}
+
+.skill-box-five {
+    position: absolute;
+    left: 1%;
+    top: 170%;
+    height: 2.3%;
+    width: 0%;
+    margin-bottom: 10%;
+    background: -webkit-linear-gradient(right, #4568dc, #4ca1af);
+}
+
+/* This is for the Contact section */
+
+.contact-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    margin: auto;
+    top: 17rem;
+    width: 78%;
+    height: 26vw;
+    background-color: #262626;
+    border-radius: 5.5px;
+}
+
+.contact-header {
+    position: absolute;
+    top: 9%;
+    left: 7%;
+    font-family: 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.contact-paragraph {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    color: white;
+    font-family: 'Kanit', 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4.7vw;
+    font-weight: bolder;
+    line-height: 110%;
+}
+
+.contact-email {
+    position: absolute;
+    top: 41%;
+    left: 55%;
+    font-family: 'Gayathri', 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.46vw;
+    font-weight: lighter;
+    background: -webkit-linear-gradient(right, #4568dc, #4ca1af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.email-link {
+    text-decoration: none;
+}
+
+.email-icon {
+    color: white;
+    position: absolute;
+    top: 47%;
+    left: 51%;
+    font-size: 1.2vw;
+}
+
+/* This is for the Footer */
+
+.footer-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 20.5rem;
+    margin: auto;
+    margin-bottom: 23rem;
+    width: 78%;
+    height: 8vw;
+    background-color: #262626;
+    border-radius: 5.5px;
+}
+
+.web-developed {
+    color: white;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    font-family: 'Kanit', 'Julius Sans One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+    font-weight: bolder;
+    line-height: 110%;
+}
+
+/* This is for additional space under footer */
+
+/* .space-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: 150px;
+    top: 120px;
+    margin: 0px;
+    width: 78%;
+    height: 1%;
+    background-color: transparent;
+    border-radius: 5.5px;
+} */

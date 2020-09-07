@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Aditya Shah's Website">
+  <meta name="author" content="Aditya Shah">
+  <meta name="keywords" content="Personal Resume, Resume, Portfolio, Personal Website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julius Sans One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gayathri">
+  <title>Aditya Shah's Personal Website</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="nav-flex-container">
+        <h1 id="navheader">ADITYA SHAH</h1>
+        <ul>
+          <li class="listnavbar"><a href="#" class="navbar 
+                    ">Home</a></li>
+          <li class="listnavbar"><a href="#about" class="navbar 
+                    ">About</a></li>
+          <li class="listnavbar"><a href="#resume" class="navbar 
+                    ">Resume</a></li>
+          <li class="listnavbar"><a href="#contact" class="navbar 
+                    ">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article style="overflow:hidden;">
+
+      <section> <!-- This is the home section -->
+        <div class="home-flex-container">
+          <span>
+            <h1 class="home-header1">High-School Student.</h1>
+          </span>
+          <span>
+            <h1 class="home-header2">Hard-Worker.</h1>
+          </span>
+          <span>
+            <h1 class="home-header3">Organized.</h1>
+          </span>
+          <span>
+            <h1 class="home-header4">Determined.</h1>
+          </span>
+          <span>
+            <h1 class="home-header5">Ambitious.</h1>
+          </span>
+          <span>
+            <h1 class="home-header6">Quick-Study.</h1>
+          </span>
+          <span>
+            <h1 class="home-header7">Meticulous.</h1>
+          </span>
+          <span>
+            <h1 class="home-header8">Disciplined.</h1>
+          </span>
+        </div>
+      </section>
+
+      <section id="about"> <!-- This is the about section -->
+        <div class="about-flex-container">
+          <span>
+            <h1 class="about-me-header">About Me</h1>
+          </span>
+          <span>
+            <h1 class="about-header">I am Aditya <br> Shah.</h1>
+          </span>
+          <p class="about-paragraph">
+            This is some text... click my emoji to read more!
+          </p>
+          <div id="overlay" onclick="off()">
+            <h1 id="overlayheader">Who I Am.</h1>
+            <p id="overlayparagraph">
+              This is some text.
+            </p>
+          </div>
+          <button type="button" class="about-image" onclick="on()"></button>
+        </div>
+      </section>
+
+      <section id="resume"> <!-- This is the resume section -->
+        <div class="resume-flex-container">
+          <span>
+            <h1 class="resume-header">Resume</h1>
+          </span>
+          <div class="resume-info-flex-container">
+            <h1 class="resume-info-paragraph">Always striving <br> for <span style="color:#4568dc;">more.</span></h1>
+            <span>
+              <h1 class="resume-info-header">SKILL</h1>
+            </span>
+            <div class="resume-skill-flex-container" onscroll="skillBaranimation()" id="resume-container">
+              <br>
+              <br>
+              <h1 class="skill-header1">Microsoft Word</h1>
+              <div class="skills-container1"></div>
+              <div class="skill-box-one" id="boxone"></div>
+              <h1 class="skill-header2">Microsoft Excel</h1>
+              <div class="skills-container2"></div>
+              <div class="skill-box-two" id="boxtwo"></div>
+              <h1 class="skill-header3">HTML5</h1>
+              <div class="skills-container3"></div>
+              <div class="skill-box-three" id="boxthree"></div>
+              <h1 class="skill-header4">CSS</h1>
+              <div class="skills-container4"></div>
+              <div class="skill-box-four" id="boxfour"></div>
+              <h1 class="skill-header5">Operating Systems</h1>
+              <div class="skills-container5"></div>
+              <div class="skill-box-five" id="boxfive"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact"> <!-- This is the contact section -->
+        <div class="contact-flex-container">
+          <h1 class="contact-header">Contact</h1>
+          <h1 class="contact-paragraph">Searching for <br> <span style="color:#4568dc;">opportunities.</span></h1>
+          
+          <a href="mailto: saditya.shah25@gmail.com" class="email-link" target="blank"><h1 class="contact-email">saditya.shah25@gmail.com</h1></a>
+          <a href="mailto: saditya.shah25@gmail.com" class="email-link" target="blank"><i class="far fa-envelope email-icon"></i></a>
+        </div>
+      </section>
+
+      <section style="margin: 0px 0px 125px 0px;"> <!-- This is the footer -->
+        <div class="footer-flex-container">
+          <p class="web-developed">Website developed by <span style="color:#4568dc;">Aditya Shah.</span></p>
+        </div>
+        <!-- <div class="space-flex-container"></div> -->
+      </section>
+
+    </article>
+  </main>
+
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/ca0803891b.js" crossorigin="anonymous"></script>
+</html>
